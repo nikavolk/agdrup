@@ -24,6 +24,11 @@ header {
   transition: 0.4s;
   padding: 25px 10px;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    position: static;
+  }
+}
 header .region-header {
   display: flex;
   justify-content: space-between;
@@ -31,10 +36,20 @@ header .region-header {
   margin: auto;
   max-width: 1012px;
 }
+@media only screen and (max-width: 768px) {
+  header .region-header {
+    display: block;
+  }
+}
 header .region-header div#block-adchallenge-branding.block {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  header .region-header div#block-adchallenge-branding.block {
+    margin-top: 30px;
+  }
 }
 header .region-header div#block-adchallenge-branding.block .site-logo {
   margin-right: 30px;
@@ -52,8 +67,19 @@ header nav ul.menu {
   display: flex;
   margin-top: 20px;
 }
+@media only screen and (max-width: 768px) {
+  header nav ul.menu {
+    display: block;
+    text-align: center;
+  }
+}
 header nav ul.menu li.menu-item {
   margin: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+  header nav ul.menu li.menu-item {
+    margin: 30px;
+  }
 }
 header nav ul.menu li.menu-item.active {
   padding-bottom: 10px;
@@ -76,6 +102,7 @@ main div#block-top-content-header.block {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(16, 16, 16);
+  width: 100%;
 }
 main div#block-top-content-header.block div#challenge-home.container {
   margin: auto;

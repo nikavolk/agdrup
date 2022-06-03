@@ -10,6 +10,10 @@ header {
   transition: 0.4s;
   padding: 25px 10px;
 
+  @media only screen and (max-width: 768px) {
+    position: static;
+  }
+
   .region-header {
     display: flex;
     justify-content: space-between;
@@ -17,8 +21,16 @@ header {
     margin: auto;
     max-width: 1012px;
 
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
     div#block-adchallenge-branding.block {
       @include flexCenterContent;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 30px;
+      }
 
       .site-logo {
         margin-right: 30px;
@@ -42,8 +54,17 @@ header {
       display: flex;
       margin-top: 20px;
 
+      @media only screen and (max-width: 768px) {
+        display: block;
+        text-align: center;
+      }
+
       li.menu-item {
         margin: 0 20px;
+
+        @media only screen and (max-width: 768px) {
+          margin: 30px;
+        }
 
         &.active {
           padding-bottom: 10px;
