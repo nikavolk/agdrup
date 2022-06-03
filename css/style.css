@@ -266,7 +266,7 @@ main div#block-about-me div#challenge-about-me.container {
 main div#block-about-me div#challenge-about-me.container .square1 {
   position: absolute;
   bottom: -102rem;
-  left: 47%;
+  left: 42%;
   width: 330px;
   height: 330px;
   background-color: rgb(22, 30, 33);
@@ -280,7 +280,7 @@ main div#block-about-me div#challenge-about-me.container .square1 {
 }
 main div#block-about-me div#challenge-about-me.container .square2 {
   position: absolute;
-  bottom: -123.9rem;
+  bottom: -130.9rem;
   left: 71.2%;
   width: 150px;
   height: 150px;
@@ -295,9 +295,10 @@ main div#block-about-me div#challenge-about-me.container .square2 {
   }
 }
 main div#block-about-me div#challenge-about-me.container img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
+  object-position: 100% 0;
 }
 @media only screen and (max-width: 768px) {
   main div#block-about-me div#challenge-about-me.container {
