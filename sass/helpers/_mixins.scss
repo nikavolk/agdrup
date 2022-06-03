@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@mixin linkColour {
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin headerTitle {
+  > h2 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      margin-top: 30px;
+      border-top: 3px solid $blue;
+      width: 100px;
+      display: block;
+    }
+  }
+}
+
+@mixin contentParagraph {
+  p {
+    font-weight: 400;
+    color: $lightGray;
+    line-height: 30px;
+  }
+}
+
+@mixin flexCenterContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

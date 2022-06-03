@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900);
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+  color: rgb(255, 255, 255);
+}
+
+html {
+  display: flex;
+}
+
+body {
+  flex-grow: 1;
+  background-color: rgb(16, 16, 16);
+}
+
+header {
+  background-color: rgba(16, 16, 16, 0.5);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: 0.4s;
+  padding: 25px 10px;
+}
+header .region-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  max-width: 1012px;
+}
+header .region-header div#block-adchallenge-branding.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .region-header div#block-adchallenge-branding.block .site-logo {
+  margin-right: 30px;
+}
+header .region-header div#block-adchallenge-branding.block .site-slogan {
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 24px;
+}
+header .region-header div#block-adchallenge-branding.block .site-slogan .site-slogan-bold {
+  font-weight: 900;
+  font-size: inherit;
+}
+header nav ul.menu {
+  display: flex;
+  margin-top: 20px;
+}
+header nav ul.menu li.menu-item {
+  margin: 0 20px;
+}
+header nav ul.menu li.menu-item.active {
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(0, 151, 167);
+}
+header nav ul.menu li.menu-item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s ease-in-out, border-bottom, 0.3s ease-in-out;
+}
+header nav ul.menu li.menu-item a:hover {
+  border-bottom: 3px solid rgb(0, 151, 167);
+}
+
+main div#block-top-content-header.block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(16, 16, 16);
+}
+main div#block-top-content-header.block div#challenge-home.container {
+  margin: auto;
+  gap: 30px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(16, 16, 16, 0.3);
+  color: rgb(255, 255, 255);
+}
+main div#block-top-content-header.block div#challenge-home.container h1 {
+  margin: 0px;
+  font-size: 64px;
+  font-weight: 100;
+  margin: 50px;
+}
+main div#block-top-content-header.block div#challenge-home.container h1 strong {
+  font-size: inherit;
+  font-weight: 900;
+}
+main div#block-top-content-header.block div#challenge-home.container h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+main div#block-top-content-header.block div#challenge-home.container h2::after {
+  content: "";
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+}
+main div#block-top-content-header.block div#challenge-home.container .field a {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 82, 82);
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: color 0.3s ease-in-out, 0.3s ease-in-out;
+}
+main div#block-top-content-header.block div#challenge-home.container .field a:hover {
+  background-color: rgb(16, 16, 16);
+  border: 1px solid rgb(255, 255, 255);
+}
+main div#block-adchallenge-content.block {
+  margin: auto;
+  max-width: 1012px;
+  padding: 8rem 1rem;
+}
+main div#block-adchallenge-content.block > h2 {
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main div#block-adchallenge-content.block > h2::after {
+  content: "";
+  margin-top: 30px;
+  border-top: 3px solid rgb(0, 151, 167);
+  width: 100px;
+  display: block;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content {
+  display: flex;
+  max-width: 1012px;
+  gap: 50px;
+}
+@media only screen and (max-width: 768px) {
+  main div#block-adchallenge-content.block .views-element-container .view-content {
+    display: block;
+  }
+  main div#block-adchallenge-content.block .views-element-container .view-content img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main div#block-adchallenge-content.block .views-element-container .view-content .views-row article {
+    margin: 40px 0;
+  }
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article h2 {
+  margin: 10px 0;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article h2 a {
+  text-decoration: none;
+  text-transform: none;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article h2 a span {
+  font-size: 24px;
+  font-weight: 500;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .createdDate {
+  color: rgb(148, 148, 148);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article img {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore {
+  padding: 0;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore a {
+  font-weight: 500;
+  text-decoration: none;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore a:hover::after {
+  margin-left: 5px;
+  content: "";
+  border: solid rgb(255, 82, 82);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: 0.3s;
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore a::after {
+  margin-left: 5px;
+  content: "";
+  border: solid rgb(0, 151, 167);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+main div#block-adchallenge-content.block .views-element-container .view-content .views-row p {
+  font-weight: 400;
+  color: rgb(212, 212, 212);
+  line-height: 30px;
+}
+main div#block-latest-event {
+  background-color: rgb(22, 30, 33);
+  padding: 8rem 1rem;
+}
+main div#block-latest-event div#challenge-event.container {
+  margin: auto;
+  max-width: 1012px;
+  gap: 30px;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  main div#block-latest-event div#challenge-event.container {
+    display: block;
+  }
+  main div#block-latest-event div#challenge-event.container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+main div#block-latest-event div#challenge-event.container .content-right > h2 {
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main div#block-latest-event div#challenge-event.container .content-right > h2::after {
+  content: "";
+  margin-top: 30px;
+  border-top: 3px solid rgb(0, 151, 167);
+  width: 100px;
+  display: block;
+}
+main div#block-latest-event div#challenge-event.container .content-right p {
+  font-weight: 400;
+  color: rgb(212, 212, 212);
+  line-height: 30px;
+}
+main div#block-about-me {
+  padding: 15rem 1rem;
+}
+main div#block-about-me div#challenge-about-me.container {
+  display: flex;
+  margin: auto;
+  max-width: 1012px;
+  gap: 30px;
+}
+main div#block-about-me div#challenge-about-me.container .square1 {
+  position: absolute;
+  bottom: -102rem;
+  left: 47%;
+  width: 330px;
+  height: 330px;
+  background-color: rgb(22, 30, 33);
+  z-index: -99;
+  transition: color 0.3s fade-in-out, 0.3s fade-in-out;
+}
+@media only screen and (max-width: 768px) {
+  main div#block-about-me div#challenge-about-me.container .square1 {
+    display: none;
+  }
+}
+main div#block-about-me div#challenge-about-me.container .square2 {
+  position: absolute;
+  bottom: -123.9rem;
+  left: 71.2%;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(29, 21, 36);
+  transform: rotate(45deg);
+  z-index: -99;
+  transition: color 0.3s fade-in-out, 0.3s fade-in-out;
+}
+@media only screen and (max-width: 768px) {
+  main div#block-about-me div#challenge-about-me.container .square2 {
+    display: none;
+  }
+}
+main div#block-about-me div#challenge-about-me.container img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+  main div#block-about-me div#challenge-about-me.container {
+    display: block;
+  }
+  main div#block-about-me div#challenge-about-me.container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+main div#block-about-me div#challenge-about-me.container .content-left > h2 {
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main div#block-about-me div#challenge-about-me.container .content-left > h2::after {
+  content: "";
+  margin-top: 30px;
+  border-top: 3px solid rgb(0, 151, 167);
+  width: 100px;
+  display: block;
+}
+main div#block-about-me div#challenge-about-me.container .content-left p {
+  font-weight: 400;
+  color: rgb(212, 212, 212);
+  line-height: 30px;
+}
+
+footer nav#block-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 30, 33);
+  height: 80px;
+}
+footer nav#block-footer ul.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+footer nav#block-footer ul.menu a {
+  color: rgb(148, 148, 148);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, 0.3s ease-in-out;
+}
+footer nav#block-footer ul.menu a:hover {
+  color: rgb(255, 255, 255);
+}
+footer #block-footercreated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 44, 46);
+  height: 50px;
+}
+footer #block-footercreated p {
+  margin: 0;
+  font-size: 12px;
+  color: rgb(212, 212, 212);
+}
+footer #block-footercreated p a {
+  color: inherit;
+  transition: color 0.3s ease-in-out, 0.3s ease-in-out;
+}
+footer #block-footercreated p a:hover {
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */

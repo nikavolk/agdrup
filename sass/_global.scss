@@ -1,0 +1,17 @@
+@use "./helpers/variables" as *;
+
+* {
+  font-family: $fontStack;
+  font-size: 14px;
+  scroll-behavior: smooth;
+  color: $white;
+}
+
+html {
+  display: flex;
+}
+
+body {
+  flex-grow: 1;
+  background-color: $black;
+}
