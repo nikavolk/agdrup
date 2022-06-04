@@ -20,19 +20,20 @@ function scrollFunction() {
     document.body.scrollTop > 120 ||
     document.documentElement.scrollTop > 120
   ) {
-    selectHeader.padding = "5px 10px";
     selectHeader.backgroundColor = "rgba(0,0,0,1)";
   } else {
-    selectHeader.padding = "25px 10px";
     selectHeader.backgroundColor = "rgba(0,0,0,0.5)";
   }
 }
 
 // add squares
 
-const squareSelector = document.querySelector("#challenge-about-me");
-squareSelector.insertAdjacentHTML("afterbegin", '<div class="square1"></div>');
-squareSelector.insertAdjacentHTML("afterbegin", '<div class="square2"></div>');
+document
+  .querySelector("#challenge-about-me")
+  .insertAdjacentHTML(
+    "afterbegin",
+    '<div class="square1"></div><div class="square2"></div>'
+  );
 
 // add span to slogan-title
 const sloganSelector = document.querySelector(".site-slogan");
