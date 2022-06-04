@@ -1,8 +1,10 @@
-/* function to set active to navbar link */
+/* function to set navbar active link to navbar link upon
+clicking it */
+
 const navBar = document.querySelectorAll("header nav ul.menu li a");
 for (let i = 0, length = navBar.length; i < length; i++) {
   navBar[i].onclick = function () {
-    var findActive = document.querySelector(".active");
+    const findActive = document.querySelector(".active");
     if (findActive) findActive.classList.remove("active");
     this.parentNode.classList.add("active");
   };
@@ -35,8 +37,10 @@ document
   );
 
 function animateNav(arg) {
+  /* animate hamburger button */
   arg.classList.toggle("animate");
 
+  /* show / hide navbar links */
   const menuSelector = document.querySelector(
     "#block-adchallenge-main-menu .menu"
   );
@@ -58,7 +62,7 @@ wordSelector += sloganSelector.textContent.substring(5, 10);
 
 sloganSelector.innerHTML = wordSelector;
 
-/* squares */
+/* background squares */
 
 document
   .querySelector("#challenge-about-me")
