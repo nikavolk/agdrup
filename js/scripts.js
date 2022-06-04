@@ -8,7 +8,7 @@ for (let i = 0, length = navBar.length; i < length; i++) {
   };
 }
 
-/* function for shrinking the header and setting its opacity 
+/* function for setting navbar opacity 
 after user scrolls down by 120px */
 window.onscroll = function () {
   scrollFunction();
@@ -26,16 +26,28 @@ function scrollFunction() {
   }
 }
 
-// add squares
-
+/*  hamburger menu with animation */
 document
-  .querySelector("#challenge-about-me")
+  .querySelector("#block-adchallenge-branding")
   .insertAdjacentHTML(
-    "afterbegin",
-    '<div class="square1"></div><div class="square2"></div>'
+    "beforeEnd",
+    '<div class="nav-hamburger-menu" onclick="animateNav(this)"><div class="menu-line1"></div><div class="menu-line2"></div><div class="menu-line3"></div></div>'
   );
 
-// add span to slogan-title
+function animateNav(arg) {
+  arg.classList.toggle("animate");
+
+  const menuSelector = document.querySelector(
+    "#block-adchallenge-main-menu .menu"
+  );
+  if (menuSelector.style.display === "block") {
+    menuSelector.style.display = "none";
+  } else {
+    menuSelector.style.display = "block";
+  }
+}
+
+/* add span to slogan-title */
 const sloganSelector = document.querySelector(".site-slogan");
 
 let wordSelector = "";
@@ -45,3 +57,12 @@ wordSelector += "</span>";
 wordSelector += sloganSelector.textContent.substring(5, 10);
 
 sloganSelector.innerHTML = wordSelector;
+
+/* squares */
+
+document
+  .querySelector("#challenge-about-me")
+  .insertAdjacentHTML(
+    "afterBegin",
+    '<div class="square1"></div><div class="square2"></div>'
+  );

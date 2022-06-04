@@ -9,11 +9,7 @@ header {
   top: 0px;
   transition: 0.4s;
   padding: 25px 0;
-
-  @media only screen and (max-width: 768px) {
-    position: static;
-    padding: 0;
-  }
+  z-index: 1;
 
   .region-header {
     display: flex;
@@ -26,11 +22,14 @@ header {
       display: block;
     }
 
-    div#block-adchallenge-branding.block {
+    /* Site logo and slogan */
+
+    div#block-adchallenge-branding {
       @include flexCenterContent;
 
       @media only screen and (max-width: 768px) {
         margin-top: 30px;
+        position: relative;
       }
 
       .site-logo {
@@ -47,20 +46,59 @@ header {
           font-size: inherit;
         }
       }
-    }
-  }
 
-  nav {
-    ul.menu {
+      /* Hamburger menu */
+
+      @media only screen and (max-width: 768px) {
+        .nav-hamburger-menu {
+          position: absolute;
+          display: inline-block;
+          cursor: pointer;
+          top: 10%;
+          right: 5%;
+          border: 2px solid $white;
+          border-radius: 5px;
+          padding: 5px 10px;
+
+          .menu-line1,
+          .menu-line2,
+          .menu-line3 {
+            width: 25px;
+            height: 3px;
+            background-color: $white;
+            margin: 6px 0;
+            transition: 0.3s;
+          }
+
+          &.animate .menu-line1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-6px, 6px);
+          }
+
+          &.animate .menu-line2 {
+            opacity: 0;
+          }
+
+          &.animate .menu-line3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-7px, -7px);
+          }
+        }
+      }
+    }
+
+    /* Navigation menu */
+
+    .menu {
       display: flex;
       margin-top: 20px;
 
       @media only screen and (max-width: 768px) {
-        display: block;
+        display: none;
         text-align: center;
       }
 
-      li.menu-item {
+      .menu-item {
         margin: 0 20px;
 
         @media only screen and (max-width: 768px) {

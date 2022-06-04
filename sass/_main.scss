@@ -2,13 +2,16 @@
 @use "./helpers/mixins" as *;
 
 main {
-  div#block-top-content-header.block {
+  /* Top heading block with background img */
+  div#block-top-content-header {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $black;
     width: 100%;
 
-    div#challenge-home.container {
+    /* Content within header block */
+
+    div#challenge-home {
       margin: auto;
       gap: 30px;
       height: 700px;
@@ -59,7 +62,9 @@ main {
     }
   }
 
-  div#block-adchallenge-content.block {
+  /* News Block */
+
+  div#block-adchallenge-content {
     margin: auto;
     max-width: 1012px;
     padding: $blockPadding;
@@ -152,6 +157,8 @@ main {
     }
   }
 
+  /* Latest Events block */
+
   div#block-latest-event {
     background-color: $darkBlue;
     padding: $blockPadding;
@@ -177,6 +184,8 @@ main {
       }
     }
   }
+
+  /* About me block */
 
   div#block-about-me {
     padding: 15rem 1rem;

@@ -1,10 +1,14 @@
 @use "./variables" as *;
 
+/* nav links */
+
 @mixin linkColour {
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* headings */
 
 @mixin headerTitle {
   > h2 {
@@ -22,6 +26,8 @@
   }
 }
 
+/* block paragraphs */
+
 @mixin contentParagraph {
   p {
     font-weight: 400;
@@ -29,6 +35,8 @@
     line-height: 30px;
   }
 }
+
+/* display flex content & center it */
 
 @mixin flexCenterContent {
   display: flex;

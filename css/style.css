@@ -15,6 +15,10 @@ body {
   background-color: rgb(16, 16, 16);
 }
 
+/* nav links */
+/* headings */
+/* block paragraphs */
+/* display flex content & center it */
 header {
   background-color: rgba(16, 16, 16, 0.5);
   display: flex;
@@ -22,13 +26,8 @@ header {
   width: 100%;
   top: 0px;
   transition: 0.4s;
-  padding: 25px 10px;
-}
-@media only screen and (max-width: 768px) {
-  header {
-    position: static;
-    padding: 0;
-  }
+  padding: 25px 0;
+  z-index: 1;
 }
 header .region-header {
   display: flex;
@@ -36,57 +35,93 @@ header .region-header {
   width: 100%;
   margin: auto;
   max-width: 1012px;
+  /* Site logo and slogan */
+  /* Navigation menu */
 }
 @media only screen and (max-width: 768px) {
   header .region-header {
     display: block;
   }
 }
-header .region-header div#block-adchallenge-branding.block {
+header .region-header div#block-adchallenge-branding {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Hamburger menu */
 }
 @media only screen and (max-width: 768px) {
-  header .region-header div#block-adchallenge-branding.block {
+  header .region-header div#block-adchallenge-branding {
     margin-top: 30px;
+    position: relative;
   }
 }
-header .region-header div#block-adchallenge-branding.block .site-logo {
+header .region-header div#block-adchallenge-branding .site-logo {
   margin-right: 30px;
 }
-header .region-header div#block-adchallenge-branding.block .site-slogan {
+header .region-header div#block-adchallenge-branding .site-slogan {
   color: rgb(255, 255, 255);
   font-weight: 300;
   font-size: 24px;
 }
-header .region-header div#block-adchallenge-branding.block .site-slogan .site-slogan-bold {
+header .region-header div#block-adchallenge-branding .site-slogan .site-slogan-bold {
   font-weight: 900;
   font-size: inherit;
 }
-header nav ul.menu {
+@media only screen and (max-width: 768px) {
+  header .region-header div#block-adchallenge-branding .nav-hamburger-menu {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 10%;
+    right: 5%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  header .region-header div#block-adchallenge-branding .nav-hamburger-menu .menu-line1,
+header .region-header div#block-adchallenge-branding .nav-hamburger-menu .menu-line2,
+header .region-header div#block-adchallenge-branding .nav-hamburger-menu .menu-line3 {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+  header .region-header div#block-adchallenge-branding .nav-hamburger-menu.animate .menu-line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  header .region-header div#block-adchallenge-branding .nav-hamburger-menu.animate .menu-line2 {
+    opacity: 0;
+  }
+  header .region-header div#block-adchallenge-branding .nav-hamburger-menu.animate .menu-line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -7px);
+  }
+}
+header .region-header .menu {
   display: flex;
   margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  header nav ul.menu {
-    display: block;
+  header .region-header .menu {
+    display: none;
     text-align: center;
   }
 }
-header nav ul.menu li.menu-item {
+header .region-header .menu .menu-item {
   margin: 0 20px;
 }
 @media only screen and (max-width: 768px) {
-  header nav ul.menu li.menu-item {
+  header .region-header .menu .menu-item {
     margin: 30px;
   }
 }
-header nav ul.menu li.menu-item.active {
+header .region-header .menu .menu-item.active {
   padding-bottom: 10px;
   border-bottom: 3px solid rgb(0, 151, 167);
 }
-header nav ul.menu li.menu-item a {
+header .region-header .menu .menu-item a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
@@ -95,17 +130,24 @@ header nav ul.menu li.menu-item a {
   border-bottom: 3px solid transparent;
   transition: color 0.3s ease-in-out, border-bottom, 0.3s ease-in-out;
 }
-header nav ul.menu li.menu-item a:hover {
+header .region-header .menu .menu-item a:hover {
   border-bottom: 3px solid rgb(0, 151, 167);
 }
 
-main div#block-top-content-header.block {
+main {
+  /* Top heading block with background img */
+  /* News Block */
+  /* Latest Events block */
+  /* About me block */
+}
+main div#block-top-content-header {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(16, 16, 16);
   width: 100%;
+  /* Content within header block */
 }
-main div#block-top-content-header.block div#challenge-home.container {
+main div#block-top-content-header div#challenge-home {
   margin: auto;
   gap: 30px;
   height: 700px;
@@ -116,27 +158,27 @@ main div#block-top-content-header.block div#challenge-home.container {
   background-color: rgba(16, 16, 16, 0.3);
   color: rgb(255, 255, 255);
 }
-main div#block-top-content-header.block div#challenge-home.container h1 {
+main div#block-top-content-header div#challenge-home h1 {
   margin: 0px;
   font-size: 64px;
   font-weight: 100;
   margin: 50px;
 }
-main div#block-top-content-header.block div#challenge-home.container h1 strong {
+main div#block-top-content-header div#challenge-home h1 strong {
   font-size: inherit;
   font-weight: 900;
 }
-main div#block-top-content-header.block div#challenge-home.container h2 {
+main div#block-top-content-header div#challenge-home h2 {
   font-size: 24px;
   font-weight: 300;
 }
-main div#block-top-content-header.block div#challenge-home.container h2::after {
+main div#block-top-content-header div#challenge-home h2::after {
   content: "";
   margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: block;
 }
-main div#block-top-content-header.block div#challenge-home.container .field a {
+main div#block-top-content-header div#challenge-home .field a {
   margin: 0;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -151,76 +193,76 @@ main div#block-top-content-header.block div#challenge-home.container .field a {
   border: 1px solid transparent;
   transition: color 0.3s ease-in-out, 0.3s ease-in-out;
 }
-main div#block-top-content-header.block div#challenge-home.container .field a:hover {
+main div#block-top-content-header div#challenge-home .field a:hover {
   background-color: rgb(16, 16, 16);
   border: 1px solid rgb(255, 255, 255);
 }
-main div#block-adchallenge-content.block {
+main div#block-adchallenge-content {
   margin: auto;
   max-width: 1012px;
   padding: 8rem 1rem;
 }
-main div#block-adchallenge-content.block > h2 {
+main div#block-adchallenge-content > h2 {
   font-size: 36px;
   font-weight: 300;
   text-transform: uppercase;
 }
-main div#block-adchallenge-content.block > h2::after {
+main div#block-adchallenge-content > h2::after {
   content: "";
   margin-top: 30px;
   border-top: 3px solid rgb(0, 151, 167);
   width: 100px;
   display: block;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content {
+main div#block-adchallenge-content .views-element-container .view-content {
   display: flex;
   max-width: 1012px;
   gap: 50px;
 }
 @media only screen and (max-width: 768px) {
-  main div#block-adchallenge-content.block .views-element-container .view-content {
+  main div#block-adchallenge-content .views-element-container .view-content {
     display: block;
   }
-  main div#block-adchallenge-content.block .views-element-container .view-content img {
+  main div#block-adchallenge-content .views-element-container .view-content img {
     width: 100%;
     height: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
-  main div#block-adchallenge-content.block .views-element-container .view-content .views-row article {
+  main div#block-adchallenge-content .views-element-container .view-content .views-row article {
     margin: 40px 0;
   }
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article h2 {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article h2 {
   margin: 10px 0;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article h2 a {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article h2 a {
   text-decoration: none;
   text-transform: none;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article h2 a span {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article h2 a span {
   font-size: 24px;
   font-weight: 500;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .createdDate {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article .createdDate {
   color: rgb(148, 148, 148);
   font-size: 12px;
   font-weight: 400;
   margin: 10px 0;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article img {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article img {
   width: 100%;
   height: 100%;
   margin: 20px 0;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article .node-readmore {
   padding: 0;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore a {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article .node-readmore a {
   font-weight: 500;
   text-decoration: none;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore a:hover::after {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article .node-readmore a:hover::after {
   margin-left: 5px;
   content: "";
   border: solid rgb(255, 82, 82);
@@ -231,7 +273,7 @@ main div#block-adchallenge-content.block .views-element-container .view-content 
   -webkit-transform: rotate(-45deg);
   transition: 0.3s;
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row article .node-readmore a::after {
+main div#block-adchallenge-content .views-element-container .view-content .views-row article .node-readmore a::after {
   margin-left: 5px;
   content: "";
   border: solid rgb(0, 151, 167);
@@ -241,7 +283,7 @@ main div#block-adchallenge-content.block .views-element-container .view-content 
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-main div#block-adchallenge-content.block .views-element-container .view-content .views-row p {
+main div#block-adchallenge-content .views-element-container .view-content .views-row p {
   font-weight: 400;
   color: rgb(212, 212, 212);
   line-height: 30px;
